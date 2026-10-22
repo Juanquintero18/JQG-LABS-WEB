@@ -18,10 +18,11 @@ Serve the project root with any static server. The favicon is linked as `/favico
 index.html        Landing page (hero, software, games, about, contact)
 privacidad.html   Privacy policy
 terminos.html     Terms of use
-styles.css        All styles, shared by the three pages
-script.js         Mobile menu, header and active-section state, scroll reveal, contact form handling, footer year
+shop-xgames.html  SHOP XGAMES project page with the live store embedded
+styles.css        All styles, shared by all pages
+script.js         Mobile menu, header and active-section state, scroll reveal, live preview size toggle, contact form handling, footer year
 favicon.svg       Site icon
-public/           Logo and isotype images
+public/           Logo and isotype images; public/proyectos/ holds project images
 agents/skill.md   Brand and site strategy brief, used as guidance for AI assistants
 ```
 
@@ -32,12 +33,14 @@ agents/skill.md   Brand and site strategy brief, used as guidance for AI assista
 | Anchor | Section |
 | --- | --- |
 | `#inicio` | Hero with the value proposition and logo |
-| `#software` | Services: custom software, automation, digital products |
+| `#software` | Services: custom software, automation, digital products; featured project card linking to `shop-xgames.html` |
 | `#interactivo` | Games and interactive experiences |
 | `#nosotros` | About JQG Labs |
 | `#contacto` | Contact form |
 
 The footer links to the legal pages and to the Facebook and Instagram profiles.
+
+
 
 ## Design
 
@@ -55,7 +58,7 @@ Colors and fonts are defined as CSS custom properties at the top of `styles.css`
 | `--gold-bright` | `#e2bb56` | Hover and focus on dark backgrounds |
 | `--gold-deep` | `#86631c` | Gold text and labels on light backgrounds |
 
-`--night` is the exact background color of the logo files in `public/`, which is why they sit on dark sections without a visible edge. The gold values are sampled from the logo gradient; `--gold-deep` is darkened so small text keeps a 4.5:1 contrast on white.
+`--night` is the exact background color of the isotype in `public/`, which is why it sits on dark sections without a visible edge. The main logo (`public/JQG_Labs_logo_principal.jpg`, a 1200px web copy of `public/logo JQG LABS.jpeg`) has a slightly lighter `#181818` background, so it is always shown inside the bordered `.brand-plate`. The gold values are sampled from the logo gradient; `--gold-deep` is darkened so small text keeps a 4.5:1 contrast on white.
 
 Typography is Source Serif 4 for headings and Inter for text and labels, both loaded from Google Fonts.
 

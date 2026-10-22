@@ -83,6 +83,17 @@ if (revealItems.length && "IntersectionObserver" in window && !window.matchMedia
   document.documentElement.classList.add("has-reveal");
 }
 
+document.querySelectorAll("[data-preview]").forEach((preview) => {
+  const modeButtons = preview.querySelectorAll("[data-preview-mode]");
+
+  modeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      preview.dataset.mode = button.dataset.previewMode;
+      modeButtons.forEach((other) => other.setAttribute("aria-pressed", String(other === button)));
+    });
+  });
+});
+
 if (contactForm && formStatus) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();

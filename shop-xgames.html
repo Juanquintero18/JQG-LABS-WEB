@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121212">
+  <meta name="description" content="SHOP XGAMES, una tienda de videojuegos en línea desarrollada por JQG Labs. Mira la tienda en vivo y cómo se construyó.">
+  <link rel="canonical" href="https://jqglabs.com/shop-xgames.html">
+  <title>SHOP XGAMES | JQG Labs</title>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JQG Labs">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:url" content="https://jqglabs.com/shop-xgames.html">
+  <meta property="og:title" content="SHOP XGAMES | JQG Labs">
+  <meta property="og:description" content="Una tienda de videojuegos en línea desarrollada por JQG Labs. Mira la tienda en vivo y cómo se construyó.">
+  <meta property="og:image" content="https://jqglabs.com/public/proyectos/shop-xgames-logo.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..600;1,8..60,300..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="index.html" aria-label="JQG Labs, inicio">
+        <img class="wordmark-mark" src="public/JQG_Labs_isotipo_fondo_negro.png" alt="" width="2000" height="2000">
+        <span class="wordmark-symbol" aria-hidden="true">JQG</span>
+        <span class="wordmark-divider" aria-hidden="true"></span>
+        <span class="wordmark-label">LABS</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-toggle-label">Menú</span>
+        <span class="menu-toggle-lines" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a class="is-active" href="index.html#software">Software</a>
+        <a href="index.html#interactivo">Videojuegos</a>
+        <a href="index.html#nosotros">Nosotros</a>
+        <a class="nav-contact" href="index.html#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero project-hero" aria-labelledby="project-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <nav class="breadcrumb" aria-label="Ruta de navegación">
+            <a href="index.html#software">Software</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">SHOP XGAMES</span>
+          </nav>
+          <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span>Proyecto destacado</p>
+          <h1 id="project-title">SHOP XGAMES</h1>
+          <p class="hero-description">Una tienda de videojuegos en línea con una entrada que se recuerda: catálogo de PlayStation y Xbox, planes de streaming, cuentas de usuario y un minijuego propio.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#en-vivo">Ver la tienda en vivo</a>
+            <a class="button button-ghost" href="https://shop-xgames.vercel.app/" target="_blank" rel="noopener">Abrir en otra pestaña</a>
+          </div>
+        </div>
+        <figure class="project-logo brand-plate">
+          <img src="public/proyectos/shop-xgames-logo.png" alt="Logotipo de SHOP XGAMES en letras de cristal sobre fondo negro" width="771" height="320" fetchpriority="high">
+        </figure>
+      </div>
+      <div class="container">
+        <dl class="hero-facts">
+          <div><dt>Tipo</dt><dd>Tienda en línea</dd></div>
+          <div><dt>Estado</dt><dd>MVP en desarrollo</dd></div>
+          <div><dt>Publicación</dt><dd>Actualización automática</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section live-section" id="en-vivo" aria-labelledby="live-title">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow"><span class="eyebrow-number">01</span><span class="eyebrow-rule" aria-hidden="true"></span>En vivo</p>
+            <h2 id="live-title">La tienda,<br><span>tal como está hoy.</span></h2>
+          </div>
+          <p class="section-lede">Esta es la versión publicada de SHOP XGAMES. Cada cambio que se publica en el proyecto aparece aquí automáticamente. Puedes navegarla sin salir de esta página.</p>
+        </div>
+        <div class="preview" data-preview data-mode="desktop" data-reveal>
+          <div class="preview-bar">
+            <a class="preview-address" href="https://shop-xgames.vercel.app/" target="_blank" rel="noopener">
+              <span class="status-dot" aria-hidden="true"></span>shop-xgames.vercel.app
+            </a>
+            <div class="preview-modes" role="group" aria-label="Tamaño de la vista previa">
+              <button type="button" data-preview-mode="desktop" aria-pressed="true">Escritorio</button>
+              <button type="button" data-preview-mode="mobile" aria-pressed="false">Móvil</button>
+            </div>
+          </div>
+          <div class="preview-stage">
+            <iframe class="preview-frame" src="https://shop-xgames.vercel.app/" title="SHOP XGAMES en vivo" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-about" id="proyecto" aria-labelledby="about-project-title">
+      <div class="container about-inner">
+        <div class="about-heading" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-number">02</span><span class="eyebrow-rule" aria-hidden="true"></span>El proyecto</p>
+          <h2 id="about-project-title">Una tienda que<br>se siente como<br><span>una consola.</span></h2>
+        </div>
+        <div class="about-copy" data-reveal>
+          <p>SHOP XGAMES nació como una landing page de alto impacto para una tienda de videojuegos. La meta: que la primera impresión transmita confianza y que recorrer el catálogo sea tan entretenido como jugar.</p>
+          <p>Hoy es un MVP de frontend. El inicio de sesión, la recuperación de contraseña y los avisos de compras funcionan con datos de demostración; la conexión con inventario, usuarios y pagos reales es la siguiente etapa.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features-section" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow"><span class="eyebrow-number">03</span><span class="eyebrow-rule" aria-hidden="true"></span>Lo que incluye</p>
+            <h2 id="features-title">Cada sección,<br>una experiencia.</h2>
+          </div>
+        </div>
+        <div class="feature-grid" data-reveal>
+          <article class="service-item">
+            <span class="service-number">01</span>
+            <h3>Bienvenida animada</h3>
+            <p>Una pantalla de entrada que se abre desde el centro, como un televisor, con la tipografía de la marca.</p>
+          </article>
+          <article class="service-item">
+            <span class="service-number">02</span>
+            <h3>PlayStation y Xbox</h3>
+            <p>Secciones propias para cada plataforma, con catálogo de juegos y transiciones de color entre ellas.</p>
+          </article>
+          <article class="service-item">
+            <span class="service-number">03</span>
+            <h3>Planes de streaming</h3>
+            <p>Tarjetas de servicios de streaming que resaltan su categoría a medida que entran en pantalla.</p>
+          </article>
+          <article class="service-item">
+            <span class="service-number">04</span>
+            <h3>Tarjetas en 3D</h3>
+            <p>PlayStation Plus y tarjetas de regalo que giran y ganan profundidad mientras haces scroll.</p>
+          </article>
+          <article class="service-item">
+            <span class="service-number">05</span>
+            <h3>Cuenta de usuario</h3>
+            <p>Registro, inicio de sesión y recuperación de contraseña por correo, más avisos de compras recientes.</p>
+          </article>
+          <article class="service-item">
+            <span class="service-number">06</span>
+            <h3>Spacegame</h3>
+            <p>Un minijuego integrado en la tienda: esquiva meteoritos y suma puntos sin salir de la página.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section" id="proceso" aria-labelledby="process-title">
+      <div class="container process-inner">
+        <div class="process-heading" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-number">04</span><span class="eyebrow-rule" aria-hidden="true"></span>Proceso</p>
+          <h2 id="process-title">De la primera<br>idea a una<br><span>tienda publicada.</span></h2>
+          <p>52 cambios registrados entre agosto y septiembre de 2026, publicados en octubre.</p>
+        </div>
+        <ol class="timeline" data-reveal>
+          <li>
+            <span class="timeline-date">Agosto 2026, semana 1</span>
+            <h3>Base y bienvenida</h3>
+            <p>Primer MVP inspirado en las grandes landing pages financieras: pantalla de bienvenida, portada y tipografía de la marca.</p>
+          </li>
+          <li>
+            <span class="timeline-date">Agosto 2026, semanas 3 y 4</span>
+            <h3>Secciones y cuentas</h3>
+            <p>Llegan la sección de Xbox, los planes de streaming con logos propios y el flujo de inicio de sesión.</p>
+          </li>
+          <li>
+            <span class="timeline-date">Septiembre 2026, semanas 1 y 2</span>
+            <h3>Catálogo y confianza</h3>
+            <p>Catálogo de PlayStation, recuperación de contraseña, pie de página, avisos de compras y la guía técnica del proyecto.</p>
+          </li>
+          <li>
+            <span class="timeline-date">Septiembre 2026, semanas 3 y 4</span>
+            <h3>Juego y arquitectura</h3>
+            <p>Se integra el minijuego y el código se reorganiza en componentes y hooks para crecer con orden.</p>
+          </li>
+          <li>
+            <span class="timeline-date">Finales de septiembre 2026</span>
+            <h3>Detalles que se notan</h3>
+            <p>Transiciones entre secciones, tarjetas en 3D, redes sociales conectadas y la versión final de Spacegame.</p>
+          </li>
+          <li>
+            <span class="timeline-date">Octubre 2026</span>
+            <h3>Publicación continua</h3>
+            <p>La tienda se publica en Vercel. Desde entonces, cada versión nueva llega sola a esta página.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section stack-section" aria-labelledby="stack-title">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow"><span class="eyebrow-number">05</span><span class="eyebrow-rule" aria-hidden="true"></span>Tecnología</p>
+            <h2 id="stack-title">Herramientas<br>elegidas con <span>intención.</span></h2>
+          </div>
+          <p class="section-lede">Un stack moderno de frontend, pensado para animaciones fluidas y para que el proyecto sea fácil de mantener.</p>
+        </div>
+        <dl class="stack-list" data-reveal>
+          <div><dt>React + TypeScript</dt><dd>Interfaz por componentes y lógica tipada.</dd></div>
+          <div><dt>Vite</dt><dd>Desarrollo rápido y compilación optimizada.</dd></div>
+          <div><dt>Tailwind CSS</dt><dd>Estilos consistentes en toda la tienda.</dd></div>
+          <div><dt>GSAP + ScrollTrigger</dt><dd>Animaciones sincronizadas con el scroll.</dd></div>
+          <div><dt>Lenis</dt><dd>Desplazamiento suave.</dd></div>
+          <div><dt>Framer Motion</dt><dd>Transiciones de ventanas y avisos.</dd></div>
+          <div><dt>EmailJS</dt><dd>Correos de recuperación de contraseña.</dd></div>
+          <div><dt>Vercel</dt><dd>Publicación automática con cada cambio.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section contact-section" aria-labelledby="project-cta-title">
+      <div class="container contact-inner">
+        <div class="contact-heading" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span>Siguiente paso</p>
+          <h2 id="project-cta-title">¿Tienes una idea<br>parecida? <span>Hablemos.</span></h2>
+        </div>
+        <div class="project-cta" data-reveal>
+          <p>Diseñamos y construimos productos digitales como este, desde la primera pantalla hasta la publicación.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="index.html#contacto">Ir a contacto</a>
+          </div>
+          <a class="legal-back" href="index.html#software">Volver a Software</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-about">
+          <a class="wordmark footer-brand" href="index.html" aria-label="JQG Labs, volver al inicio">
+            <img class="wordmark-mark" src="public/JQG_Labs_isotipo_fondo_negro.png" alt="" width="2000" height="2000" loading="lazy">
+            <span class="wordmark-symbol" aria-hidden="true">JQG</span>
+            <span class="wordmark-divider" aria-hidden="true"></span>
+            <span class="wordmark-label">LABS</span>
+          </a>
+          <p>Software e ideas en movimiento.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Secciones del sitio">
+          <p class="footer-title">Sitio</p>
+          <a href="index.html#software">Software</a>
+          <a href="index.html#interactivo">Videojuegos</a>
+          <a href="index.html#nosotros">Nosotros</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+        <nav class="footer-nav footer-links" aria-label="Información legal">
+          <p class="footer-title">Legal</p>
+          <a href="privacidad.html">Política de privacidad</a>
+          <a href="terminos.html">Términos de uso</a>
+        </nav>
+        <nav class="footer-nav social-links" aria-label="Redes sociales">
+          <p class="footer-title">Redes</p>
+          <a class="social-link" href="https://www.facebook.com/jqglabs" target="_blank" rel="noopener noreferrer" aria-label="JQG Labs en Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.3H16l.4-3h-2.9V8.8c0-.9.3-1.5 1.5-1.5h1.5V4.6c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.7v3h2.6V21h3.2Z"/></svg>
+            Facebook
+          </a>
+          <a class="social-link" href="https://www.instagram.com/jqglabs/" target="_blank" rel="noopener noreferrer" aria-label="JQG Labs en Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="social-icon-dot" cx="17.7" cy="6.7" r="1"/></svg>
+            Instagram
+          </a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span class="copyright">© <span id="current-year">2026</span> JQG Labs. Todos los derechos reservados.</span>
+        <span>Colombia</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
